@@ -47,9 +47,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 
-# =======================================================
-# 6. TUNED XGBOOST (95%+ ACCURACY)
-# =======================================================
+
 xgb = XGBClassifier(
     n_estimators=800,
     max_depth=5,
